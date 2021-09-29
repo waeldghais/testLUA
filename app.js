@@ -1,20 +1,30 @@
 
+ // variable for testing  mode of feedback(enabel or disabel)
  var enbel = false;
+ //whene click feedback btn to enabel or disabel the mode
  function activeFeedback() {
     enbel = !enbel;
  }
+
+// function to make a border for mouse position 
  function showborder(){
      //console.log(event.target.tagName);
-     if(enbel){
-            
+     if(enbel){ 
             $(event.target).removeAttr("href").toggleClass("mystyle").click(function () {
                          $("#MyPopup").modal("show");
-                         //enbel = !enbel;
                     });
-        
      }
  }
 
+//click to close the modal
+function closeModal() {
+    // Place the above code inside this block
+    $('#btnClosePopup').click(function() {
+        enbel = false;
+        $('#MyPopup').modal('hide');
+
+    });
+ };
 // function showborder(){
 //     document.body.addEventListener('mouseover',function(e){
 //     let tagName = e.target.nodeName;

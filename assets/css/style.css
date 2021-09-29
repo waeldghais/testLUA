@@ -1550,3 +1550,10 @@ section {
   color: #fff;
   text-decoration: none;
 }
+
+
+/* style of border when posistion of mouse */
+.mystyle {
+  border: 5px solid green;
+}
+
