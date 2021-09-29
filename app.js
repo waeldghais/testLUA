@@ -1,8 +1,21 @@
- 
 
-
+ var enbel = false;
+ function active() {
+    enbel = !enbel;
+ }
  function showborder(){
-    $(event.target).toggleClass("mystyle");
+     if(enbel){
+        $(event.target).toggleClass("mystyle").click(function () {
+            $("#MyPopup").modal("show");
+        });
+     }
+        
+        // $(function () {
+        //     $(event.target).click(function () {
+        //         // $("#MyPopup").modal("show");
+        //         // return false;
+        //     });
+        // }); 
  }
 
 // function showborder(){
