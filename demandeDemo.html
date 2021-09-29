@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Mentor Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Mentor - v4.3.0
+  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <script src='app.js'></script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  
+
+</head>
+
+<body >
+  <div id="MyPopup" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                
+                <h4 class="modal-title">
+                    Greetings
+                </h4>
+            </div>
+            <div class="modal-body d-flex justify-content-center">
+              <div class="container ">
+                <div class="card mt-5 pb-5">
+                    <div class="d-flex flex-row justify-content-between p-3 adiv text-white"> <i class="fas fa-chevron-left"></i> <span class="pb-3">feedback</span> <i class="fas fa-times"></i> </div>
+                    <div class="mt-2 p-4 text-center">
+                      <form>
+                        <h6 class="mb-0">Your feedback help us to improve.</h6> 
+                       
+                        <div class="form-group mt-4"> <textarea class="form-control" rows="4" placeholder="Message"></textarea> </div>
+                        <div class="mt-2"> <button type="submit" class="btn btn-primary btn-block"><span>Send feedback</span></button> </div>
+                       
+                      </form>
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="modal-footer">
+                <input type="button" id="btnClosePopup" value="Close" class="btn btn-danger" data-dismiss="modal" onclick="closeModal()" />
+            </div>
+        </div>
+    </div>
+</div>
+  <section onmouseover="showborder()" onmouseout="showborder()">
+    
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center">
+  
+        <h1 class="logo me-auto"><a href="index.html">Mentor</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+  
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="trainers.html">Trainers</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+  
+            <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="#">Drop Down 1</a></li>
+                <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Drop Down 2</a></li>
+                <li><a href="#">Drop Down 3</a></li>
+                <li><a href="#">Drop Down 4</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+  
+        <a href="courses.html" class="get-started-btn">Get Started</a>
+      </div>
+    </header>
+    <!-- form to request demo -->
+    <section id="request_demo" class="d-flex justify-content-center align-items-center">
+            <div class="row container">
+              <div class="col ">
+                <form>
+                    <div class="form-group mt-4 col-8">
+                      <label >Name</label>
+                      <input type="text" class="form-control "  required>
+                    </div>
+                    <div class="form-group mt-4 col-8">
+                        <label >Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                      </div>
+                      <div class="form-group mt-4 col-8">
+                        <label >Phone number</label>
+                        <input type="number" class="form-control"  required>
+                      </div>
+                      <div class="form-group mt-4 col-8">
+                        <label >Company</label>
+                        <input type="text" class="form-control"  required>
+                      </div>
+                      <p class="mt-4">Does your company use Salesforce?</p>
+                      <div class="row">
+                          
+                        <div class="col-3">
+                            <div class="form-check">
+                                <input class="form-check-input " type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
+                                <label class="form-check-label" for="exampleRadios1">
+                                  Yes   
+                                </label>
+                              </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-check ">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
+                                <label class="form-check-label" for="exampleRadios1">
+                                  No
+                                </label>
+                              </div>
+                        </div>
+                      </div>
+                      <div class="form-check mt-4">
+                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                        <label class="form-check-label" for="exampleRadios1">
+                            I wish to receive information about other SurveyMonkey Business Solutions like product updates, news, information, 
+                            and special promotions. Visit the Privacy Notice for information on how we use your information. You can unsubscribe at any time.   
+                          </label>
+                      </div>
+                      <div class="mt-4">
+                          <label class="form-label" for="exampleRadios1">
+                            By clicking 'Request a demo', I agree to use of my details to contact me about my specific request or inquiry.
+                          </label>
+                      </div>
+                      <button type="submit" class="btn btn-success mt-4">Request Demo</button>
+                  </form>
+              </div>
+              <div class="col">
+                <h5 class="gf-background-0-2-57 gf-background-309-0-2-925  gf-dropCap-0-2-58 gf-dropCap-310-0-2-926  gf-paragraph-0-2-59 gf-paragraph-311-0-2-927  gf-paragraphSpacing-0-2-900">
+                    Déplacez-vous à la vitesse des clients d'aujourd'hui
+                </h5>
+                <p class="gf-background-0-2-57 gf-background-309-0-2-925  gf-dropCap-0-2-58 gf-dropCap-310-0-2-926  gf-paragraph-0-2-59 gf-paragraph-311-0-2-927  gf-paragraphSpacing-0-2-900">
+                    Maison Du Web vous aide à recueillir les commentaires instantanés de vos clients, sur tous les points de contact, y compris les sites Web, les applications mobiles, les e-mails, etc.
+                </p>
+                <div class="gf-wdsGridContainer-0-2-44  gf-wdsGridContainerDynamic-0-2-45 gf-wdsGridContainerDynamic-68-0-2-935">
+                <div class="gf-wdsGrid-0-2-46 gf-wdsGridDynamic-0-2-47 gf-wdsGridDynamic-69-0-2-936 gf-addFlex-0-2-42 gf-addFlex-34-0-2-934">
+                <div class="gf-wdsGridItem-0-2-52  gf-wdsGridItemDynamic-0-2-53 gf-wdsGridItemDynamic-48-0-2-938 gf-addFlex-0-2-50 gf-addFlex-48-0-2-937">
+                <p class="gf-background-0-2-57 gf-background-315-0-2-931  gf-dropCap-0-2-58 gf-dropCap-316-0-2-932  gf-paragraph-0-2-59 gf-paragraph-317-0-2-933  gf-paragraphSpacing-0-2-900">
+                <ul>
+                    <li class="mt-2 mb-2">Obtenez un programme CX opérationnel en quelques jours, pas des mois</li>
+                    <li class="mt-2 mb-2">Identifier les facteurs clés de la satisfaction et de la fidélité des clients</li>
+                    <li class="mt-2 mb-2">Tirez parti de notre intégration Salesforce pour mesurer l'impact commercial de l'expérience client</li>   
+                </ul>
+                <img alt="" class="gf-imageClass-0-2-767" src="assets\img\testimonials\testimonials-3.jpg">
+              </div>
+            </div>
+            </div>
+        
+      </section>
+  <!-- End form to request demo -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+  
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+  
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>Mentor</h3>
+              <p>
+                A108 Adam Street <br>
+                New York, NY 535022<br>
+                United States <br><br>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+            </div>
+  
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 footer-newsletter">
+              <h4>Join Our Newsletter</h4>
+              <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+              <form action="" method="post">
+                <input type="email" name="email"><input type="submit" value="Subscribe">
+              </form>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+      <div class="container d-md-flex py-4">
+  
+        <div class="me-md-auto text-center text-md-start">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Mentor</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+        <div class="social-links text-center text-md-right pt-3 pt-md-0">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+    </footer><!-- End Footer -->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    
+  </section>
+ 
+  <input type="button" onclick="activeFeedback()" value="Feedback" >
+
+  
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
