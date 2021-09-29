@@ -1,21 +1,18 @@
 
  var enbel = false;
- function active() {
+ function activeFeedback() {
     enbel = !enbel;
  }
  function showborder(){
+     //console.log(event.target.tagName);
      if(enbel){
-        $(event.target).toggleClass("mystyle").click(function () {
-            $("#MyPopup").modal("show");
-        });
-     }
+            
+            $(event.target).removeAttr("href").toggleClass("mystyle").click(function () {
+                         $("#MyPopup").modal("show");
+                         //enbel = !enbel;
+                    });
         
-        // $(function () {
-        //     $(event.target).click(function () {
-        //         // $("#MyPopup").modal("show");
-        //         // return false;
-        //     });
-        // }); 
+     }
  }
 
 // function showborder(){
